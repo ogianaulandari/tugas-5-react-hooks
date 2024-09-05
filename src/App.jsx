@@ -21,12 +21,12 @@ function App() {
           handleLogin={handleLogin}
           handleLogout={handleLogout}/>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </ThemeProvider>

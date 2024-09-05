@@ -5,8 +5,9 @@ import Home from './components/Home';
 import About from './components/About'; 
 import Help from './components/Help';
 import Media from './pages/Media';
-import Contact from './components/Contact';
-import Navbar from './components/Navbar';
+import Contact from './pages/Contact';
+import Navbar from './Navbar/Navbar';
+import Login from './components/Login';
 
 function App() {
   const [isLogIn, setIsLogIn] =useState(false);
@@ -20,12 +21,12 @@ function App() {
           handleLogin={handleLogin}
           handleLogout={handleLogout}/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/" element={<Login />} />
         </Routes>
       </Router>
     </ThemeProvider>

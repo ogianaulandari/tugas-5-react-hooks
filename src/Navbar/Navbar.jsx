@@ -17,7 +17,7 @@ const Navbar = ({ isLogIn, handleLogin, handleLogout }) => {
       </div>
       <div className="flex-grow flex justify-center">
         <div className="flex items-center text-xl space-x-9 ml-12">
-          <NavLink to="/" className={ getClassName }>
+          <NavLink to="/home" className={ getClassName }>
             Beranda
           </NavLink>
           <NavLink to="/about" className={ getClassName }>
